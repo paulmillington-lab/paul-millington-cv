@@ -315,6 +315,7 @@ h4 {
   gap: 1rem;
   padding: 1.2rem 1.5rem;
   cursor: pointer;
+  height: 100px;
 }
 
 .role-card__header h3 {
