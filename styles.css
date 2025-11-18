@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Space Grotesk', 'SF Pro Display', system-ui, -apple-system, sans-serif;
@@ -158,6 +162,20 @@ h4 {
 .hero__contact a {
   color: var(--text);
   text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.hero__contact ul a {
+  color: var(--text);
+  text-decoration: none;
+  display: block;
+  padding: 0.2rem 0;
+  transition: color 150ms ease, transform 150ms ease;
+}
+
+.hero__contact ul a:hover {
+  color: var(--accent);
+  transform: translateX(4px);
 }
 
 .section-heading {
