@@ -10,11 +10,7 @@ const profile = {
       location: 'Gateshead',
       scale: ['£5m budget', '300+ FTE', '30+ countries'],
       highlights: [
-        'Built and scaled global operations to support FTSE100 and Fortune 500 clients across 30+ countries.',
-        'Led global AI, automation and process redesign programmes, rolling out AI-assisted scheduling and forecasting tools.',
-        'Cut service issues by 40% via a new operations centre, service recovery controls and predictive analytics.',
-        'Delivered 25% cost savings and £1m vendor savings through model redesign and supplier optimisation.',
-        'Eliminated 60% of manual processes with Salesforce, NetSuite and Administrate automation; embedded data-driven decisions via JIRA, Clockify and Power BI.',
+        'Responsible for building and leading MindGym\'s global operations capability across Client & Coach Operations, Shared Services, Vendor Management, Business Systems Architecture, IT Service Management, and Change Implementation. Accountable for operational processes, delivery governance, global scheduling, capacity planning, and integration of platforms such as Salesforce, NetSuite, Administrate, and Coaching.com. Led 300+ FTE globally and managed a multi-million-pound operational budget, partnering with the CEO and CFO to shape the enterprise operating model, technology roadmap, and service standards.',
       ],
     },
     {
@@ -24,11 +20,7 @@ const profile = {
       location: 'United Kingdom',
       scale: ['1,500+ hires onboarded', 'Multi-client coverage'],
       highlights: [
-        'Improved NPS by +10 points for a major bank while cutting FCA complaints by 25%.',
-        'Reduced handling time by 15% through workflow optimisation and knowledge management uplift.',
-        'Lowered early-life attrition by 20% through redesigned onboarding journeys.',
-        'Implemented standardised QA frameworks across multiple regulated clients.',
-        'Launched a digital learning platform for a Tier 1 global bank.',
+        'Accountable for operational excellence, customer experience, and compliance programmes across regulated UK organisations. Responsible for CX framework design, onboarding experience development, knowledge management, workflow governance, and embedding operational controls across multiple client brands. Supported operational leaders in improving service standards, onboarding processes, digital learning adoption, and compliance alignment.',
       ],
     },
     {
@@ -38,11 +30,7 @@ const profile = {
       location: 'Gateshead',
       scale: ['650 FTE', '4 global delivery centres'],
       highlights: [
-        'Led a 650-FTE global customer care organisation across the UK, Philippines, Colombia and India.',
-        'Cut operating costs by 30% with chatbot, video support and co-browsing self-service.',
-        'Delivered £1m+ savings through vendor consolidation and onboarding a new strategic BPO.',
-        'Improved First Contact Resolution by 10% with redesigned FCA-regulated complaint handling.',
-        'Introduced global delivery standards to improve consistency across regions.',
+        'Led global customer care operations serving SME and enterprise merchants across the UK, Europe, India, the Philippines, and Latin America. Accountable for service delivery, contact centre strategy, regulatory process ownership, partner management, operational governance, and customer support policy design. Oversaw in-house and BPO teams, workforce planning, service standards, and global operational controls.',
       ],
     },
     {
@@ -52,11 +40,7 @@ const profile = {
       location: 'Gateshead',
       scale: ['1,000-seat operation', 'Chargebacks & onboarding'],
       highlights: [
-        'Accountable for Service, Retention, Chargebacks and Onboarding across a 1,000-seat operation.',
-        'Reduced cost-to-serve by £3m annually by consolidating service sites post-M&A.',
-        'Automated chargeback processing (Chargebacks911) improving accuracy and speed.',
-        'Reduced onboarding time from 5 days to under 24 hours through automated KYC.',
-        'Delivered 30% OPEX reduction via digital self-service (chatbots, co-browsing).',
+        'Reported to the UK Managing Director with accountability for Customer Service, Retention, Chargeback Operations, and Merchant Onboarding. Led a 1,000-seat operation and owned operational strategy, financial governance, multi-site delivery, regulatory compliance, and the operating model during major M&A integration. Responsible for CRM transitions, digital support channel oversight, workforce planning, and operational governance frameworks.',
       ],
     },
   ],
