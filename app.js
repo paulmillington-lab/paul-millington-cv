@@ -9,6 +9,7 @@ const profile = {
       dates: 'Oct 2022 – Present',
       location: 'Gateshead',
       scale: ['£5m budget', '300+ FTE', '30+ countries'],
+      scope: 'Responsible for building and leading MindGym\'s global operations capability across Client & Coach Operations, Shared Services, Vendor Management, Business Systems Architecture, IT Service Management, and Change Implementation. Accountable for operational processes, delivery governance, global scheduling, capacity planning, and integration of platforms such as Salesforce, NetSuite, Administrate, and Coaching.com. Led 300+ FTE globally and managed a multi-million-pound operational budget, partnering with the CEO and CFO to shape the enterprise operating model, technology roadmap, and service standards.',
       highlights: [
         'Built and scaled global operations to support FTSE100 and Fortune 500 clients across 30+ countries.',
         'Led global AI, automation and process redesign programmes, rolling out AI-assisted scheduling and forecasting tools.',
@@ -23,6 +24,7 @@ const profile = {
       dates: 'Apr 2021 – Oct 2022',
       location: 'United Kingdom',
       scale: ['1,500+ hires onboarded', 'Multi-client coverage'],
+      scope: 'Accountable for operational excellence, customer experience, and compliance programmes across regulated UK organisations. Responsible for CX framework design, onboarding experience development, knowledge management, workflow governance, and embedding operational controls across multiple client brands. Supported operational leaders in improving service standards, onboarding processes, digital learning adoption, and compliance alignment.',
       highlights: [
         'Improved NPS by +10 points for a major bank while cutting FCA complaints by 25%.',
         'Reduced handling time by 15% through workflow optimisation and knowledge management uplift.',
@@ -37,6 +39,7 @@ const profile = {
       dates: 'Jan 2019 – Jan 2021',
       location: 'Gateshead',
       scale: ['650 FTE', '4 global delivery centres'],
+      scope: 'Led global customer care operations serving SME and enterprise merchants across the UK, Europe, India, the Philippines, and Latin America. Accountable for service delivery, contact centre strategy, regulatory process ownership, partner management, operational governance, and customer support policy design. Oversaw in-house and BPO teams, workforce planning, service standards, and global operational controls.',
       highlights: [
         'Led a 650-FTE global customer care organisation across the UK, Philippines, Colombia and India.',
         'Cut operating costs by 30% with chatbot, video support and co-browsing self-service.',
@@ -51,6 +54,7 @@ const profile = {
       dates: 'Jan 2016 – Jan 2019',
       location: 'Gateshead',
       scale: ['1,000-seat operation', 'Chargebacks & onboarding'],
+      scope: 'Reported to the UK Managing Director with accountability for Customer Service, Retention, Chargeback Operations, and Merchant Onboarding. Led a 1,000-seat operation and owned operational strategy, financial governance, multi-site delivery, regulatory compliance, and the operating model during major M&A integration. Responsible for CRM transitions, digital support channel oversight, workforce planning, and operational governance frameworks.',
       highlights: [
         'Accountable for Service, Retention, Chargebacks and Onboarding across a 1,000-seat operation.',
         'Reduced cost-to-serve by £3m annually by consolidating service sites post-M&A.',
@@ -86,8 +90,8 @@ const detailCompany = document.getElementById('detailCompany');
 const detailLocation = document.getElementById('detailLocation');
 const detailHighlights = document.getElementById('detailHighlights');
 const detailMetrics = document.getElementById('detailMetrics');
+const detailScope = document.getElementById('detailScope');
 const achievementsGrid = document.getElementById('achievementsGrid');
-const roleCards = document.getElementById('roleCards');
 const certList = document.getElementById('certList');
 const educationList = document.getElementById('educationList');
 const yearSpan = document.getElementById('year');
@@ -150,6 +154,17 @@ const setActive = (idx) => {
     detailMetrics.appendChild(chip);
   });
 
+  if (detailScope) {
+    if (role.scope) {
+      detailScope.innerHTML = `
+        <h4>Scope & Responsibilities</h4>
+        <p>${role.scope}</p>
+      `;
+    } else {
+      detailScope.innerHTML = '';
+    }
+  }
+
   detailHighlights.innerHTML = '';
   role.highlights.forEach((point) => {
     const li = document.createElement('li');
@@ -197,79 +212,11 @@ const renderLists = () => {
   }
 };
 
-const renderRoleCards = () => {
-  if (!roleCards) return;
-  const roleIds = {
-    'Global Customer Operations Director': 'role-mindgym',
-    'European Director, Operational Excellence': 'role-firstsource',
-    'Global Head of Customer Care': 'role-worldpay',
-    'Senior Vice President, UK Operations': 'role-worldpay-svp',
-  };
-  profile.workHistory.forEach((role, idx) => {
-    const card = document.createElement('article');
-    card.className = 'role-card';
-    const roleId = roleIds[role.role] || '';
-    if (roleId) card.id = roleId;
-
-    const headerButton = document.createElement('button');
-    headerButton.type = 'button';
-    headerButton.className = 'role-card__header';
-    headerButton.setAttribute('aria-expanded', 'false');
-    headerButton.setAttribute('aria-controls', `role-body-${idx}`);
-    headerButton.innerHTML = `
-      <div>
-        <p class="eyebrow">${role.dates}</p>
-        <h3>${role.role}</h3>
-        <span>${role.company} · ${role.location}</span>
-      </div>
-      <div class="role-card__chevron">⌄</div>
-    `;
-
-    const body = document.createElement('div');
-    body.className = 'role-card__body';
-    body.id = `role-body-${idx}`;
-    body.innerHTML = `
-      <div class="role-card__body-content">
-        <div class="role-card__chips">
-          ${role.scale.map((chip) => `<span>${chip}</span>`).join('')}
-        </div>
-        <div>
-          <h4>Highlights</h4>
-          <ul>
-            ${role.highlights.map((item) => `<li>${item}</li>`).join('')}
-          </ul>
-        </div>
-      </div>
-    `;
-
-    headerButton.addEventListener('click', () => {
-      const isOpen = card.classList.toggle('open');
-      headerButton.setAttribute('aria-expanded', String(isOpen));
-      if (isOpen) {
-        body.style.maxHeight = `${body.scrollHeight}px`;
-      } else {
-        body.style.maxHeight = '0px';
-      }
-    });
-
-    headerButton.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        headerButton.click();
-      }
-    });
-
-    card.appendChild(headerButton);
-    card.appendChild(body);
-    roleCards.appendChild(card);
-  });
-};
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
 renderTimeline();
 renderAchievements();
-renderRoleCards();
 renderLists();
 setActive(0);

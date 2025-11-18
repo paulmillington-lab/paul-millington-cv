@@ -278,6 +278,38 @@ h4 {
   font-size: 0.85rem;
 }
 
+.details__scope {
+  margin-top: 1.5rem;
+}
+
+.details__scope h4 {
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.details__scope p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.details__highlights {
+  margin-top: 1.5rem;
+}
+
+.details__highlights h4 {
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
 .details__highlights ul {
   margin: 0;
   padding-left: 1.2rem;
@@ -385,6 +417,29 @@ h4 {
   border-radius: 999px;
   padding: 0.3rem 0.8rem;
   font-size: 0.8rem;
+}
+
+.role-card__section {
+  margin-top: 1rem;
+}
+
+.role-card__section:first-of-type {
+  margin-top: 0;
+}
+
+.role-card__section h4 {
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.role-card__section p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
 }
 
 .role-card__body ul {
