@@ -162,9 +162,18 @@ const setActive = (idx) => {
 
 const renderAchievements = () => {
   if (!achievementsGrid) return;
+  const achievementIds = {
+    'Led global operations of 1,000+ FTE across four continents.': 'impact-global-ops',
+    'Delivered multimillion-pound savings via automation and vendor optimisation.': 'impact-automation',
+    'Achieved +10 NPS uplift and 40% fewer service issues through CX transformation.': 'impact-cx',
+    'Cut onboarding time from 5 days to under 24 hours using automated KYC.': 'impact-automation-kyc',
+    'Balanced compliance and commercial goals in FCA-regulated environments.': 'impact-compliance',
+  };
   profile.achievements.forEach((item) => {
     const card = document.createElement('div');
     card.className = 'panel__card';
+    const id = achievementIds[item] || '';
+    card.id = id;
     card.innerHTML = `<strong>Impact</strong><p>${item}</p>`;
     achievementsGrid.appendChild(card);
   });
@@ -190,9 +199,17 @@ const renderLists = () => {
 
 const renderRoleCards = () => {
   if (!roleCards) return;
+  const roleIds = {
+    'Global Customer Operations Director': 'role-mindgym',
+    'European Director, Operational Excellence': 'role-firstsource',
+    'Global Head of Customer Care': 'role-worldpay',
+    'Senior Vice President, UK Operations': 'role-worldpay-svp',
+  };
   profile.workHistory.forEach((role, idx) => {
     const card = document.createElement('article');
     card.className = 'role-card';
+    const roleId = roleIds[role.role] || '';
+    if (roleId) card.id = roleId;
 
     const headerButton = document.createElement('button');
     headerButton.type = 'button';

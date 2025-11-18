@@ -300,6 +300,12 @@ h4 {
   background: rgba(9, 11, 22, 0.7);
   overflow: hidden;
   box-shadow: var(--shadow);
+  scroll-margin-top: 2rem;
+  transition: border-color 300ms ease;
+}
+
+.role-card:target {
+  border-color: var(--accent);
 }
 
 .role-card__header {
@@ -389,6 +395,13 @@ h4 {
   background: rgba(255, 255, 255, 0.02);
   border-radius: 18px;
   border: 1px solid var(--border);
+  scroll-margin-top: 2rem;
+  transition: border-color 300ms ease, background 300ms ease;
+}
+
+.panel__card:target {
+  border-color: var(--accent);
+  background: rgba(109, 229, 210, 0.08);
 }
 
 .panel__card strong {
