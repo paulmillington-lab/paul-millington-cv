@@ -154,6 +154,7 @@ const setActive = (idx) => {
     detailMetrics.appendChild(chip);
   });
 
+  // Render scope & responsibilities section
   if (detailScope) {
     if (role.scope) {
       detailScope.innerHTML = `
