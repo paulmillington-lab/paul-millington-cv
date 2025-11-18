@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paul Millington | Experience Timeline</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header class="hero">
+        <div class="hero__content">
+          <figure class="hero__avatar">
+            <img
+              src="./assets/paul-millington.jpg"
+              alt="Portrait of Paul Millington in Central Park"
+              width="160"
+              height="160"
+              loading="lazy"
+            />
+            <figcaption>Paul Millington</figcaption>
+          </figure>
+          <p class="eyebrow">Global Operations & AI Leadership</p>
+          <h1>Hi, I'm Paul Millington.</h1>
+          <p class="lede">
+            I architect modern, AI-led operating models for FTSE100 and Fortune 500
+            brands—scaling multi-site teams, automating journeys and turning service into
+            a strategic advantage.
+          </p>
+          <div class="hero__cta">
+            <a class="btn primary" href="#timeline">Explore the timeline</a>
+            <a class="btn ghost" href="mailto:paul.millington@me.com">Book a conversation</a>
+            <a
+              class="btn linkedin"
+              href="https://www.linkedin.com/in/paul-millington-51499a13/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 8.98h3.96V21H3zM9.49 9h3.8v1.62h.05c.53-.95 1.83-1.95 3.77-1.95 4.04 0 4.79 2.52 4.79 5.8V21H18V15.1c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9.5Z"
+                  fill="currentColor"
+                />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+          <ul class="hero__stats">
+            <li><span>800+</span> people led globally</li>
+            <li><span>£20m+</span> budgets managed</li>
+            <li><span>25%</span> average cost savings</li>
+            <li><span>40%</span> fewer service issues</li>
+          </ul>
+        </div>
+        <aside class="hero__contact">
+          <div>
+            <p class="label">Contact</p>
+            <a href="tel:+447958756844">07958 756 844</a>
+            <a href="mailto:paul.millington@me.com">paul.millington@me.com</a>
+          </div>
+          <div>
+            <p class="label">Location</p>
+            <p>Houghton-Le-Spring, Durham DH4 7TU</p>
+          </div>
+          <div>
+            <p class="label">Focus Areas</p>
+            <p>AI enablement · Automation · Global operations · CX transformation</p>
+          </div>
+        </aside>
+      </header>
+
+      <section id="timeline" class="timeline">
+        <div class="section-heading">
+          <p class="eyebrow">Experience Navigator</p>
+          <h2>Interactive career timeline</h2>
+          <p>
+            Drag, scroll or tap across each milestone to dive into the remit, scale and
+            outcomes delivered in every role.
+          </p>
+        </div>
+
+        <div class="timeline__container" aria-label="Career timeline" role="list">
+          <div class="timeline__track" id="timelineTrack"></div>
+        </div>
+
+        <article class="timeline__details" aria-live="polite">
+          <div class="details__meta">
+            <p class="eyebrow" id="detailDates"></p>
+            <h3 id="detailRole"></h3>
+            <p id="detailCompany" class="detail-company"></p>
+            <p class="detail-location" id="detailLocation"></p>
+          </div>
+          <div class="details__metrics" id="detailMetrics"></div>
+          <div class="details__highlights">
+            <h4>Impact highlights</h4>
+            <ul id="detailHighlights"></ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="role-cards">
+        <div class="section-heading">
+          <p class="eyebrow">Deep-Dive Explorer</p>
+          <h2>Tap into each role’s remit</h2>
+          <p>
+            Click any role card to expand the responsibilities, AI initiatives and results delivered
+            in that position.
+          </p>
+        </div>
+        <div class="role-cards__grid" id="roleCards"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Signature Outcomes</p>
+          <h2>Value I bring to executive teams</h2>
+          <p>Across fintech, telecoms and professional services engagements.</p>
+        </div>
+        <div class="panel__grid" id="achievementsGrid"></div>
+      </section>
+
+      <section class="panel panel--alt">
+        <div class="panel__column">
+          <p class="eyebrow">AI & Digital Credentials</p>
+          <h2>Ready for GenAI-scale operations</h2>
+          <ul id="certList"></ul>
+        </div>
+        <div class="panel__column">
+          <p class="eyebrow">Education</p>
+          <h2>Grounded in payments & delivery</h2>
+          <ul id="educationList"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Paul Millington. Built for curious recruiters.</p>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
