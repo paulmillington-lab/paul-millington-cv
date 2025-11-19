@@ -17,6 +17,10 @@ const profile = {
         'Delivered 25% cost savings and £1m vendor savings through model redesign and supplier optimisation.',
         'Eliminated 60% of manual processes with Salesforce, NetSuite and Administrate automation; embedded data-driven decisions via JIRA, Clockify and Power BI.',
       ],
+      cta: {
+        label: 'See my work in action',
+        url: 'assets/Our_Platform_for_Growth (1).mp4',
+      },
     },
     {
       role: 'European Director, Operational Excellence',
@@ -136,6 +140,7 @@ const detailLocation = document.getElementById('detailLocation');
 const detailHighlights = document.getElementById('detailHighlights');
 const detailMetrics = document.getElementById('detailMetrics');
 const detailScope = document.getElementById('detailScope');
+const detailCta = document.getElementById('detailCta');
 const achievementsGrid = document.getElementById('achievementsGrid');
 const certList = document.getElementById('certList');
 const educationList = document.getElementById('educationList');
@@ -217,6 +222,19 @@ const setActive = (idx) => {
     li.textContent = point;
     detailHighlights.appendChild(li);
   });
+
+  if (detailCta) {
+    if (role.cta) {
+      const encodedUrl = encodeURI(role.cta.url);
+      detailCta.innerHTML = `
+        <a class="btn ghost" href="${encodedUrl}" target="_blank" rel="noreferrer noopener">
+          ${role.cta.label}
+        </a>
+      `;
+    } else {
+      detailCta.innerHTML = '';
+    }
+  }
 
   nodes[idx].scrollIntoView({ inline: 'center', behavior: 'smooth', block: 'nearest' });
 };

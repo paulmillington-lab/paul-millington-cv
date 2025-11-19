@@ -317,6 +317,16 @@ h4 {
   gap: 0.4rem;
 }
 
+.details__cta {
+  margin-top: 1.5rem;
+}
+
+.details__cta .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .role-cards {
   margin-top: 4rem;
 }
