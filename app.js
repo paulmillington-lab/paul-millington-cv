@@ -136,7 +136,7 @@ const profile = {
       company: 'Worldpay',
       role: 'Executive Colleague',
       quote:
-        'I’ve had the privilege of working with Jamie across multiple organisations for more than two decades, and he consistently stands out as a leader who truly puts people at the heart of everything he does. Jamie has an incredible passion for developing and supporting his teams, and people genuinely enjoy working for him. As a result, he inspires strong performance, loyalty, and a culture where individuals feel valued and set up to succeed.\n\nJamie is one of those rare leaders you can always rely on — steady, thoughtful, and fully committed. He goes the extra mile when it matters, brings real clarity to complex situations, and adds huge value to any team lucky enough to have him. A superb operator, trusted colleague, and someone I’ve always admired and enjoyed working with.',
+        'I\'ve worked with Paul in two large organisations and known him for over 20 years now. More recently I worked with Paul at Worldpay where I reported into him in his role of VP Operations. Paul is without doubt an inspirational people leader, he maintains very strong engagement levels with his direct reports, their teams as well as key business stakeholders. His clear work ethic combined with solid communication / collaboration with others, customer focus, effective strategy planning and alignment with key goals sets him apart from other senior leaders. He also consistently displays strong personable values, integrity and a genuine care for others at all times.',
     },
   ],
 };
