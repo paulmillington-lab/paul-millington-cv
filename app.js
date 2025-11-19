@@ -288,16 +288,21 @@ const renderLists = () => {
 
 const renderTestimonials = () => {
   if (!testimonialsList) return;
+  testimonialsList.innerHTML = '';
   profile.testimonials.forEach((testimonial) => {
     const card = document.createElement('article');
     card.className = 'testimonial-card';
+    const quoteParagraphs = testimonial.quote.split('\n\n').map(para => para.trim()).filter(para => para);
+    const quoteHTML = quoteParagraphs.map(para => `<p class="testimonial-card__quote">${para}</p>`).join('');
     card.innerHTML = `
       <div class="testimonial-card__meta">
         <p class="testimonial-card__name">${testimonial.name}</p>
         <p class="testimonial-card__company">${testimonial.company}</p>
         ${testimonial.role ? `<p class="testimonial-card__role">${testimonial.role}</p>` : ''}
       </div>
-      <p class="testimonial-card__quote">${testimonial.quote.replace(/\n\n/g, '</p><p class="testimonial-card__quote">')}</p>
+      <div class="testimonial-card__content">
+        ${quoteHTML}
+      </div>
     `;
     testimonialsList.appendChild(card);
   });

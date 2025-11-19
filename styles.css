@@ -505,6 +505,12 @@ h4 {
   font-size: 0.9rem;
 }
 
+.testimonial-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .testimonial-card__quote {
   margin: 0;
   line-height: 1.7;
