@@ -130,6 +130,15 @@ const profile = {
   education: [
     'Masters Degree, Management (International Payments Ecosystem) — Middlesex University',
   ],
+  testimonials: [
+    {
+      name: 'Jamie Oliver',
+      company: 'Worldpay',
+      role: 'Executive Colleague',
+      quote:
+        'I’ve had the privilege of working with Jamie across multiple organisations for more than two decades, and he consistently stands out as a leader who truly puts people at the heart of everything he does. Jamie has an incredible passion for developing and supporting his teams, and people genuinely enjoy working for him. As a result, he inspires strong performance, loyalty, and a culture where individuals feel valued and set up to succeed.\n\nJamie is one of those rare leaders you can always rely on — steady, thoughtful, and fully committed. He goes the extra mile when it matters, brings real clarity to complex situations, and adds huge value to any team lucky enough to have him. A superb operator, trusted colleague, and someone I’ve always admired and enjoyed working with.',
+    },
+  ],
 };
 
 const timelineTrack = document.getElementById('timelineTrack');
@@ -145,6 +154,7 @@ const achievementsGrid = document.getElementById('achievementsGrid');
 const certList = document.getElementById('certList');
 const educationList = document.getElementById('educationList');
 const yearSpan = document.getElementById('year');
+const testimonialsList = document.getElementById('testimonialsList');
 
 let activeIndex = 0;
 
@@ -276,11 +286,29 @@ const renderLists = () => {
   }
 };
 
+const renderTestimonials = () => {
+  if (!testimonialsList) return;
+  profile.testimonials.forEach((testimonial) => {
+    const card = document.createElement('article');
+    card.className = 'testimonial-card';
+    card.innerHTML = `
+      <div class="testimonial-card__meta">
+        <p class="testimonial-card__name">${testimonial.name}</p>
+        <p class="testimonial-card__company">${testimonial.company}</p>
+        ${testimonial.role ? `<p class="testimonial-card__role">${testimonial.role}</p>` : ''}
+      </div>
+      <p class="testimonial-card__quote">${testimonial.quote.replace(/\n\n/g, '</p><p class="testimonial-card__quote">')}</p>
+    `;
+    testimonialsList.appendChild(card);
+  });
+};
+
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
 renderTimeline();
 renderAchievements();
+renderTestimonials();
 renderLists();
 setActive(0);
