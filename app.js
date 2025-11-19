@@ -19,7 +19,7 @@ const profile = {
       ],
       cta: {
         label: 'See my work in action',
-        url: 'assets/Our_Platform_for_Growth (1).mp4',
+        url: 'assets/our-platform-for-growth.mp4',
       },
     },
     {
