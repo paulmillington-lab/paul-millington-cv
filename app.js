@@ -138,6 +138,13 @@ const profile = {
       quote:
         'I\'ve worked with Paul in two large organisations and known him for over 20 years now. More recently I worked with Paul at Worldpay where I reported into him in his role of VP Operations. Paul is without doubt an inspirational people leader, he maintains very strong engagement levels with his direct reports, their teams as well as key business stakeholders. His clear work ethic combined with solid communication / collaboration with others, customer focus, effective strategy planning and alignment with key goals sets him apart from other senior leaders. He also consistently displays strong personable values, integrity and a genuine care for others at all times.',
     },
+    {
+      name: 'Steph Kramer',
+      company: 'MindGym',
+      role: 'Colleague',
+      quote:
+        'I had the pleasure of working closely with Paul in his role as Group Operations Director, where he led the set up of MindGym\'s operations capability in Gateshead. This was a significant piece of transformation work that cut service issues, delivered cost savings and eliminated manual processes. The result was a positive step change in both client delivery and overall satisfaction.\n\nPaul is one of those rare operators who is both highly pragmatic and deeply human. He has a real knack for cutting through complexity, finding a sensible path forward and bringing people with him in the process. As a partner, he is steady, solutions focused and always thinking a few steps ahead.\n\nAnyone lucky enough to work with Paul can count on a trusted partner who will leave things better than he found them, while being an absolute pleasure to work with along the way.',
+    },
   ],
 };
 
