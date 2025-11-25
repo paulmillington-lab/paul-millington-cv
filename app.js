@@ -145,6 +145,13 @@ const profile = {
       quote:
         'I had the pleasure of working closely with Paul in his role as Group Operations Director, where he led the set up of MindGym\'s operations capability in Gateshead. This was a significant piece of transformation work that cut service issues, delivered cost savings and eliminated manual processes. The result was a positive step change in both client delivery and overall satisfaction.\n\nPaul is one of those rare operators who is both highly pragmatic and deeply human. He has a real knack for cutting through complexity, finding a sensible path forward and bringing people with him in the process. As a partner, he is steady, solutions focused and always thinking a few steps ahead.\n\nAnyone lucky enough to work with Paul can count on a trusted partner who will leave things better than he found them, while being an absolute pleasure to work with along the way.',
     },
+    {
+      name: 'Kevin Deadman',
+      company: 'MindGym',
+      role: 'Functional Leader',
+      quote:
+        'Paul and I worked closely together for approaching three years during a period of intense change and transformation at MindGym. From scratch Paul set up an entirely new shared service operation, consolidating a number of process streams and resulting in significant operational savings.\n\nMore recently Paul spearheaded the implementation of new business wide operating systems, replacing legacy technology platforms with off the shelf SaaS solutions, providing the business with access to more modern, best in class solutions at materially lower costs.\n\nAs a line manager Paul achieved a good balance in terms of giving me the autonomy to run my functional area but also being supportive and a good sounding board for the change projects that I had initiated, helping me to refine ideas to achieve the greatest impact. In a business with deeply ingrained ways of working I always thought of Paul as a close ally and together we were able to implement some very high impact changes within operations despite having very limited resources and budgets to work with. This requires having a disciplined approach, creative problem solving and effective consensus building and stakeholder management to get change initiatives from the drawing board to successful execution.\n\nI have huge respect for Paul as an Operations Leader, he is calm under pressure, he’s tenacious in exploring solutions and better ways of doing things and he’s thorough in his execution, making sure effort and investment translates into meaningful results.',
+    },
   ],
 };
 
